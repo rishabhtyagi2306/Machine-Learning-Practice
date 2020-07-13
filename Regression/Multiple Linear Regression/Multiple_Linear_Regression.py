@@ -32,3 +32,8 @@ print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),
 
 #Making Single Predictions
 print(regressor.predict([[1, 0, 0, 160000, 130000, 300000]]))
+
+
+#Getting the final linear regression equation with the values of the coefficients
+print(regressor.coef_)
+print(regressor.intercept_)
